@@ -26,7 +26,13 @@ public class DynamicSortUtil implements Comparable {
         this.isASC = isASC;
     }
 
-    // 지정된 필드를 기준으로 SObject 비교
+    /**
+     * @author th.kim
+     * @description 지정된 필드를 기준으로 SObject 비교
+     * @param compareTo
+     *
+     * @return
+     */
     public Integer compareTo(Object compareTo) {
         // Cast argument to DynamicSorter
         DynamicSortUtil compareToObj = (DynamicSortUtil) compareTo;
